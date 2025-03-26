@@ -5,6 +5,7 @@ import java.time.Duration;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.Assert;
 import org.testng.Reporter;
 import org.testng.annotations.Test;
 
@@ -20,6 +21,13 @@ public class LoginHRM {
 		System.out.println("build executed");
 		System.err.println("BUILD EXE PROCESS");
 		Reporter.log("BUILD RUNS",true);
+	}
+	@Test
+	public void name() {
+		System.out.println("second test");
+		Assert.fail();
+		
+		
 	}
 
 }
