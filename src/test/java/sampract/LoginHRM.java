@@ -18,6 +18,7 @@ public class LoginHRM {
 		driver.findElement(By.xpath("//input[@placeholder='Password']")).sendKeys("admin123");
 		driver.findElement(By.xpath("//button[@type='submit']")).click();
 		System.out.println("build executed");
+		System.err.println("BUILD EXE PROCESS");
 		Reporter.log("BUILD RUNS",true);
 	}
 
